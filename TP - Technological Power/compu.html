@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Computadoras</title>
+</head>
+<body background="imagenes/fondo.jpg">
+
+	<img src="imagenes/enca.jpg">
+
+	<!-- TABLA DE DIFERENTES MARCAS DE NETBOOKS -->
+
+	<table border="4px" bgcolor="Floralwhite" width="100%">
+	<!-- Asus -->
+										<!-- Productos -->
+	<tr>
+		<td><center><img src="imagenes/notebooks/asusCorei3.jpg"></center></td><td><center><img src="imagenes/notebooks/asus14R9.jpg"></center></td><td><center><img src="imagenes/notebooks/asus15Amd.jpg"></center></td><td><center><img src="imagenes/notebooks/asus14.5Touch.jpg"></center></td>
+	</tr>
+										<!-- Precios -->
+	<tr>
+		<td><center><form method="get"><input type="checkbox" name="asusCorei3precios"></form><img src="imagenes/notebooks/asusCorei3precios.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="asus14R9precio"></form><img src="imagenes/notebooks/asus14R9precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="asus15Amdprecio"></form><img src="imagenes/notebooks/asus15Amdprecio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="asus14.5Touchprecio"></form><img src="imagenes/notebooks/asus14.5Touchprecio.jpg" height="120px"></center></td>
+	</tr>
+	<!-- Lenovo -->
+										<!-- Productos -->
+	<tr>
+		<td><center><img src="imagenes/notebooks/lenovoCeleron.jpg"></center></td><td><center><img src="imagenes/notebooks/lenovoHome.jpg"></center></td><td><center><img src="imagenes/notebooks/lenovoAmdRyzen5.jpg"></center></td><td><center><img src="imagenes/notebooks/lenovolp3R5.jpg"></center></td>
+	</tr>
+										<!-- Precios -->
+	<tr>
+		<td><center><form method="get"><input type="checkbox" name="lenovoCeleronprecio"></form><img src="imagenes/notebooks/lenovoCeleronprecio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="lenovoHomeprecio"></form><img src="imagenes/notebooks/lenovoHomeprecio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="lenovoAmdRyzen5precio"></form><img src="imagenes/notebooks/lenovoAmdRyzen5precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="lenovolp3R5precio"></form><img src="imagenes/notebooks/lenovolp3R5precio.jpg" height="120px"></center></td>
+	</tr>
+	<!-- Dell -->
+										<!-- Productos -->
+	<tr>
+		<td><center><img src="imagenes/notebooks/dellRyzen5.jpg"></center></td><td><center><img src="imagenes/notebooks/dellGaming.jpg"></center></td><td><center><img src="imagenes/notebooks/delli3.jpg"></center></td><td><center><img src="imagenes/notebooks/dellInspRyzen5.jpg"></center></td>
+	</tr>
+										<!-- Precios -->
+	<tr>
+		<td><center><form method="get"><input type="checkbox" name="dellRyzen5precio"></form><img src="imagenes/notebooks/dellRyzen5precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="dellGamingprecio"></form><img src="imagenes/notebooks/dellGamingprecio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="delli3precio"></form><img src="imagenes/notebooks/delli3precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="dellInspRyzen5precio"></form><img src="imagenes/notebooks/dellInspRyzen5precio.jpg" height="120px"></center></td>
+	</tr>
+	<!-- Apple -->
+										<!-- Productos -->
+	<tr>
+		<td><center><img src="imagenes/notebooks/MacBookAir13.jpg"></center></td><td><center><img src="imagenes/notebooks/MacBookPro13.jpg"></center></td><td><center><img src="imagenes/notebooks/MacBookPro14.jpg"></center></td><td><center><img src="imagenes/notebooks/MacBookPro16.jpg"></center></td>
+	</tr>
+										<!-- Precios -->
+	<tr>
+		<td><center><form method="get"><input type="checkbox" name="MacBookAir13precio"></form><img src="imagenes/notebooks/MacBookAir13precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="MacBookPro13precio"></form><img src="imagenes/notebooks/MacBookPro13precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="MacBookPro14precio"></form><img src="imagenes/notebooks/MacBookPro14precio.jpg" height="120px"></center></td><td><center><form method="get"><input type="checkbox" name="iMacBookPro16precio"></form><img src="imagenes/notebooks/MacBookPro16precio.jpg" height="120px"></center></td>
+	</tr>
+
+</table>
+
+<br><br> <!--FORMULARIO DE COMPRA GENERAL-->
+
+<table border="4px" width="100%">
+	<tr>
+		<td rowspan="5"><center>
+			<form method="post">
+			<b style="color:Floralwhite">
+				Metodo de Pago:  
+				<select name="pagos">
+					<option value="metodopago"> </option>
+					<option value="efectivo">Efectivo</option>
+					<option value="debito">Debito</option>
+					<option value="credito">Credito</option>
+				</select>
+				<br><br>
+
+				<form action="edades.asp" method="post">
+					<center>
+				Elija el tipo de entrega:<br><br>
+					<input type="radio" name="sucursal" value="central">Sucursal Tucumán Central - Av. Belgrano 1536 - Gratis - Hasta 11 días hábiles<br>
+					<input type="radio" name="sucursal" value="tucuman">Sucursal Tucumán - 9 de Julio 19 - Gratis - Hasta 11 días hábiles<br>
+					<input type="radio" name="sucursal" value="peatonal">Sucursal Tucumán peatonal - Peatonal Muñecas 40 - Gratis - Hasta 11 días hábiles<br>
+					<input type="radio" name="sucursal" value="envio">Envio domicilio - $3.000 - Hasta 9 días hábiles<br>
+				</center>
+				</form>
+				<br><br>
+
+			<b><hr>DATOS DE COMPRA<hr><br>Nombre: <input type="text" name="nombre" required value="">   Apellido: <input type="text" name="apellido" required value=""><br><br>
+			DNI: <input type="number" name="DNI" required value=""><br><br>
+			Dirección: <input type="text" name="direccion" required value="">   Provicia: <select name="retiro">
+					<option value="sinretiro"> </option>
+					<option value="envio">Tucumán</option>
+					<option value="sucursal1">Buenos Aires</option>
+					<option value="sucursal2">Catamarca</option>
+					<option value="sucursal2">Tierra del Fuego</option>
+					<option value="sucursal2">Neuquen</option>
+					<option value="sucursal2">Misiones</option>
+				</select> <br><br>
+			<form method="get"> Teléfono: <input type="number" name="apellido" required value=""><input type="checkbox" name="iphone13precio">Movil</form><br>
+			 E-mail: <input type="email" name="email" required value=""></b><br><br>
+			<form method="get"><input type="checkbox" name="iphone13precio">Quiero recibir promociones por mail.</form>
+			<textarea name="eltexto" rows="7" cols="40" placeholder="Comentarios..." required value=""></textarea> <br>
+
+			<input type="submit" value="Comprar">
+			<input type="reset" value="Borrar">
+
+			</center></b>
+		  </form>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
